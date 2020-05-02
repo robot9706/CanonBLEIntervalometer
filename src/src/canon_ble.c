@@ -92,7 +92,7 @@ static struct canon_command cmdset_pair_request[] = {
     // Send the name to the camera, to bond, this actually won't get executed, it is only used to create a bond
     {.ble_type = BLE_CMD_WRITE_SECURE_BOND, .can_chr = CAN_CHR_PAIR_COMMAND, .can_data = CAN_DATA_NAME},
 
-    // Send the name to the camera, to bond
+    // Send the name to the camera
     {.ble_type = BLE_CMD_WRITE, .can_chr = CAN_CHR_PAIR_COMMAND, .can_data = CAN_DATA_NAME},
 
     // Enable the indication
