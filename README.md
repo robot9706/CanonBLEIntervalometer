@@ -1,5 +1,8 @@
-# Canon BLE protocol
+# ESP32 intervalometer
 
+The "src" contains the code for an ESP32-IDF based intervalometer.
+
+# Canon BLE protocol
 
 ## Overview
 
@@ -46,9 +49,9 @@ The pairing process uses Service 1, the pairing process looks as follows:
 2) Send the __Set nickname command__ *to the pairing command characteristic* with *security* and bonding enabled, this should fail because the devices are not bonded.
 3) Wait for the bonding process to finish.
 4) Send the __Set name command__ again without any security requirements.
-5) Enable *indications* for the pairing callback.
+5) Enable *indications* for the *pairing command* characteristic.
 6) Wait for a callback, if the pairing is accepted continue, otherwise abort.
-7) Send the __Set name command__, __Set platform command__ and the __Confirm command__ *to the pairing data characteristic*.
+7) Send the __Set name command__, __Set platform command__ and the __Confirm command__ to the *pairing data* characteristic.
 8) The devices are now paired.
 
 ### Connection process
@@ -65,7 +68,3 @@ After a device is paired with a camera and wants to connect it needs to do the f
 
 
 (Tested and works with Canon EOS M50)
-
-## ESP32 intervalometer
-
-The "src" contains the code for an ESP32-IDF based intervalometer.
