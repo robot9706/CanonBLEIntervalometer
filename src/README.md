@@ -38,4 +38,5 @@ The menus are the following:
 
 ### Images
 
+Prototype:
 ![Prototype](img/proto.jpg)
