@@ -35,3 +35,7 @@ The menus are the following:
 * * __Set__: The number of seconds between each trigger.
 * * __Back__: Back to the camera menu.
 * * __Start/Stop__: Start and stop the timer.
+
+### Images
+
+![Prototype](img/proto.jpg)
